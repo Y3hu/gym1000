@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-flow: column;
+}
+
+.carouselMargin{
+    margin: 2% 0 0 0;
+}
+
+.homeInfo{
+    margin: 2% 0 0 0;
+}

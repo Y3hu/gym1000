@@ -1,0 +1,32 @@
+<div class="container pt-3">
+    <div class="row justify-content-sm-center">
+        <div class="col-sm-10 col-md-6">
+        <div class="card border-info">
+            <div class="card-header">Registro</div>
+            <div class="card-body">
+            <div class="row">
+                
+                <div class="col-md-12">
+
+                    <input type="text" class="form-control mb-2" placeholder="Nombre" #userName required>
+                    <input type="text" class="form-control mb-2" placeholder="Apellido" #userLastName required>
+                    <input type="text" class="form-control mb-2" placeholder="Altura" #userSize required>
+                    <input type="text" class="form-control mb-2" placeholder="Peso" #userWeight required>
+                    <input type="text" class="form-control mb-2" placeholder="Correo" #userEmail required>
+                    <input type="password" class="form-control mb-2" placeholder="Contraseña" #userPassword required>
+                    <div class="form-group">
+                        <select class="form-control" id="sel1" [(ngModel)]="selectedDay">
+                            <option [value]="undefined" >Día de corte (membresía):</option>
+                            <option *ngFor="let day of days" >{{ day }}</option>
+                        </select>
+                    </div>
+                    <button  class="btn btn-lg btn-primary btn-block mb-1"  (click)="createUser(userName.value, userLastName.value, userSize.value, userWeight.value, userEmail.value, userPassword.value)">
+                        Registrar
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

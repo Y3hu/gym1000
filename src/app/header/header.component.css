@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    margin-left: -5.4% !important;
+  }
+  
+  li a {
+    display: block;
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .nav-log{
+    display: block;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    font-size: 22px;
+  }

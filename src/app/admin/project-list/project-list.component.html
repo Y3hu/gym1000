@@ -1,0 +1,24 @@
+<p>Lista de usuarios</p>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col" align="right"><button type="button" (click)="goToRegisterPage()" class="btn btn-primary btn-block">Nuevo usuario</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td align="left">{{user.name}}</td>
+                <td align="left">{{user.lastName}}</td>
+                <td align="left">
+                    <div class="options">
+                        <button type="button" class="btn btn-outline-success">Editar</button>
+                        <button type="button" class="btn btn-outline-danger" (click)="removeUser(user.id)">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</div>

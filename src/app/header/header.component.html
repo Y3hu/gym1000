@@ -1,0 +1,22 @@
+<nav  class="navbar navbar-expand-lg navbar-light"  style="background-color: #b3cbdd;">
+    <a class="nav-log" href="home">KGYM</a>
+    <div class="own-nav-styles" id="navbarText">
+        <ul>
+            <li  class="nav-item">
+                <a  class="nav-link"  routerLink="/home">Home</a>
+            </li>
+            <li  class="nav-item">
+                <a  class="nav-link"  routerLink="/feedback">Feedback</a>
+            </li>
+            <li *ngIf="!authService.isLoggedIn" class="nav-item">
+                <a  class="nav-link"  routerLink="/admin/list">Log In</a>
+            </li>
+            <li  *ngIf="authService.isLoggedIn" class="nav-item">
+                <a class="nav-link"  routerLink="/admin/list">Usuarios</a>
+            </li>
+            <li  *ngIf="authService.isLoggedIn" class="nav-item">
+                <a class="nav-link"  (click)="authService.logout()">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
