@@ -14,8 +14,8 @@ app.use(cors({ origin: true }));
 var transporter = nodemailer.createTransport({
     service: "hotmail",
     auth: {
-        user: "gimmnm88@hotmail.com",
-        pass: "aitikary123"
+        user: ",
+        pass: ""
     }
 })
 
